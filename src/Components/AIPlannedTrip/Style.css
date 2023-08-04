@@ -1,0 +1,122 @@
+.trip-planner {
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    width: calc(100vw - 60px);
+
+    padding: 20px;
+
+    max-width: 800px;
+    height: 200px;
+
+    background: linear-gradient(45deg, rgb(54, 9, 64), rgb(33, 12, 61));
+
+    gap: 5px;
+
+}
+
+.input-fields-for-planner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 200px;
+    height: 100%;
+
+    gap: 5px;
+
+    margin-left: 20px;
+}
+
+#starting-point, #ending-point, #number-of-days {
+    height: 20px;
+    width: 100%;
+
+    padding: 5px 10px;
+
+    border-style: none;
+    border-radius: 5px;
+    outline: 0;
+
+    background: #ffffff1f;
+
+    color: white;
+}
+
+#starting-point::placeholder, #ending-point::placeholder, #number-of-days::placeholder {
+    color: white;
+    font-size: 10px;
+}
+
+#generate-trip-btn {
+    background: rgb(74, 116, 255);
+    outline: 0;
+    border-style: none;
+
+    height: 30px;
+    width: 100px;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+.planning-img {
+    height: 100%;
+}
+
+.planning-img img {
+    width: 100%;
+}
+
+.planned-trip {
+    width: calc(100vw - 60px);
+    height: 400px;
+    max-width: 800px;
+
+    margin: auto;
+
+    overflow-y: scroll;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(45deg, rgb(54, 9, 64), rgb(33, 12, 61));
+    color: white;
+
+    font-size: 13px;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 700px) {
+    
+    .trip-planner {
+        border-radius: 10px;
+    }
+
+    .planned-trip {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .trip-planner {
+        padding: 20px 0px;
+        width: 100vw;
+        box-shadow: none;
+    }
+
+    .planned-trip {
+        box-shadow: none;
+    }
+}
